@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+main {
+    max-width: 668px;
+    margin: auto;
+    width: 90%; 
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.container{
+    margin: 0 auto;
+    width: 90%;
+}
+
+#header{
+  background-color: white; 
+  color:#333;
+  padding: 16px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.container-logo-nav{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.enlaces{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation ul{
+    margin:0;
+    padding: 0;
+}
+    .navigation ul li{
+    display: inline-block;
+    }
+        .navigation ul li a{
+            display:block;
+            padding: 8px 16px;
+            transition: all 0.4s linear;
+        }
+        .navigation ul li a:hover{
+            color: red;
+        }
+
+#toggle{
+    display:none;
+}
+
+#label_toggle{
+    font-size: 32px;
+    color:rebeccapurple;
+}
+
+.dark{
+    background-color: black;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+}
+
+#linea{
+    height: 4px;
+    background-color: darkblue;
+    filter:drop-shadow(2px 2px 2px)
+}
+
+#imagenCircular{
+    align-items: center;
+    display: block;
+    border-radius: 50%;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    margin-top:100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.presentacion{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    display: block;
+    margin:0 auto;
+    padding: 15px;
+    width: 90%;
+}
+
+    .presentacion h1{
+        line-height:32px;
+        font-size: 32px;
+    }
+
+#curriculum{
+    text-align: center;
+    display:block;
+    background-color: darkblue;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 0 auto;
+    color: white;
+    width:40%;
+}
+
+#comentario{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: lightblue;
+    border-radius: 10px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding: 15px;
+    width: 90%;
+}
+
+.iconos{
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-around;
+    align-items:flex-start;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+#footer{
+    background: darkblue;
+    padding-top:5px;
+    padding-bottom: 10px;
+    text-align: center;
+    color:white;
+    font-size: 14px;
+}
+
+@media(min-width: 669px){
+    .superior{
+        display: flex;
+        padding-top: 30px;
+        justify-content: space-around;
+        align-items:flex-start;
+    }
+
+    #imagenCircular{
+        margin-top:40px;
+        margin-left: 80px;
+        margin-right: 80px;
+        width: 200px;
+    }
+
+    .presentacion{
+        text-align: left;
+        display: block;
+        margin-top:50px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 14px;
+        line-height: 14px; 
+    }
+
+    #comentario{
+        padding: 10px;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .iconos{
+        margin-top: 25px;
+    }
+    
+    #footer{
+        padding-top:5px;
+        padding-bottom: 10px;
+    }
+}
